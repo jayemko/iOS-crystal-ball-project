@@ -44,6 +44,9 @@
                             <constraint firstAttribute="trailing" secondItem="RTx-0v-0QU" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="rnc-Da-EAP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="predictionLabel" destination="2Z0-JT-xd4" id="saB-e0-SLS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
