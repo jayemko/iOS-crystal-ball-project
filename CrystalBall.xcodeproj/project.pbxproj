@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C3EC82D17C8219700192358 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C3EC82C17C8219700192358 /* background.png */; };
 		3C725F7017C2D57D00A9674F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C725F6F17C2D57D00A9674F /* UIKit.framework */; };
 		3C725F7217C2D57D00A9674F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C725F7117C2D57D00A9674F /* Foundation.framework */; };
 		3C725F7417C2D57D00A9674F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C725F7317C2D57D00A9674F /* CoreGraphics.framework */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C3EC82C17C8219700192358 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		3C725F6C17C2D57D00A9674F /* CrystalBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrystalBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C725F6F17C2D57D00A9674F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3C725F7117C2D57D00A9674F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C3EC82B17C8216200192358 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3C3EC82C17C8219700192358 /* background.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		3C725F6317C2D57D00A9674F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +93,7 @@
 		3C725F7517C2D57D00A9674F /* CrystalBall */ = {
 			isa = PBXGroup;
 			children = (
+				3C3EC82B17C8216200192358 /* Images */,
 				3C725F7E17C2D57D00A9674F /* AppDelegate.h */,
 				3C725F7F17C2D57D00A9674F /* AppDelegate.m */,
 				3C725F8717C2D57D00A9674F /* MainStoryboard.storyboard */,
@@ -163,6 +174,7 @@
 				3C725F8417C2D57D00A9674F /* Default@2x.png in Resources */,
 				3C725F8617C2D57D00A9674F /* Default-568h@2x.png in Resources */,
 				3C725F8917C2D57D00A9674F /* MainStoryboard.storyboard in Resources */,
+				3C3EC82D17C8219700192358 /* background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +310,7 @@
 				3C725F9117C2D57D00A9674F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
