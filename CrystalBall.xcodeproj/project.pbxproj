@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3C3EC82D17C8219700192358 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C3EC82C17C8219700192358 /* background.png */; };
+		3C3EC82F17C825A200192358 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C3EC82E17C825A200192358 /* background@2x.png */; };
+		3C3EC83417C825F400192358 /* button_bg_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C3EC83017C825F400192358 /* button_bg_off.png */; };
+		3C3EC83517C825F400192358 /* button_bg_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C3EC83117C825F400192358 /* button_bg_off@2x.png */; };
+		3C3EC83617C825F400192358 /* button_bg_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C3EC83217C825F400192358 /* button_bg_on.png */; };
+		3C3EC83717C825F400192358 /* button_bg_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C3EC83317C825F400192358 /* button_bg_on@2x.png */; };
 		3C725F7017C2D57D00A9674F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C725F6F17C2D57D00A9674F /* UIKit.framework */; };
 		3C725F7217C2D57D00A9674F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C725F7117C2D57D00A9674F /* Foundation.framework */; };
 		3C725F7417C2D57D00A9674F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C725F7317C2D57D00A9674F /* CoreGraphics.framework */; };
@@ -23,6 +28,11 @@
 
 /* Begin PBXFileReference section */
 		3C3EC82C17C8219700192358 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		3C3EC82E17C825A200192358 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		3C3EC83017C825F400192358 /* button_bg_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bg_off.png; sourceTree = "<group>"; };
+		3C3EC83117C825F400192358 /* button_bg_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_bg_off@2x.png"; sourceTree = "<group>"; };
+		3C3EC83217C825F400192358 /* button_bg_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_bg_on.png; sourceTree = "<group>"; };
+		3C3EC83317C825F400192358 /* button_bg_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_bg_on@2x.png"; sourceTree = "<group>"; };
 		3C725F6C17C2D57D00A9674F /* CrystalBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrystalBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C725F6F17C2D57D00A9674F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3C725F7117C2D57D00A9674F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +68,11 @@
 		3C3EC82B17C8216200192358 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3C3EC83017C825F400192358 /* button_bg_off.png */,
+				3C3EC83117C825F400192358 /* button_bg_off@2x.png */,
+				3C3EC83217C825F400192358 /* button_bg_on.png */,
+				3C3EC83317C825F400192358 /* button_bg_on@2x.png */,
+				3C3EC82E17C825A200192358 /* background@2x.png */,
 				3C3EC82C17C8219700192358 /* background.png */,
 			);
 			name = Images;
@@ -175,6 +190,11 @@
 				3C725F8617C2D57D00A9674F /* Default-568h@2x.png in Resources */,
 				3C725F8917C2D57D00A9674F /* MainStoryboard.storyboard in Resources */,
 				3C3EC82D17C8219700192358 /* background.png in Resources */,
+				3C3EC82F17C825A200192358 /* background@2x.png in Resources */,
+				3C3EC83417C825F400192358 /* button_bg_off.png in Resources */,
+				3C3EC83517C825F400192358 /* button_bg_off@2x.png in Resources */,
+				3C3EC83617C825F400192358 /* button_bg_on.png in Resources */,
+				3C3EC83717C825F400192358 /* button_bg_on@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
