@@ -15,14 +15,43 @@
 @implementation ViewController
 @synthesize predictionLabel;
 @synthesize predictionArray;
+@synthesize imageView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     UIImage *image = [UIImage imageNamed:@"background.png"];
-    UIImageView *imageView = [[UIImageView alloc]initWithImage:image];
-    [self.view insertSubview:imageView atIndex:0];
+    self.imageView = [[UIImageView alloc]initWithImage:image];
+    [self.view insertSubview:self.imageView atIndex:0];
+    
+    self.imageView.animationImages = [[NSArray alloc]initWithObjects:[UIImage imageNamed:@"cball00001"],
+                                      [UIImage imageNamed:@"cball00002"],
+                                      [UIImage imageNamed:@"cball00003"],
+                                      [UIImage imageNamed:@"cball00004"],
+                                      [UIImage imageNamed:@"cball00005"],
+                                      [UIImage imageNamed:@"cball00006"],
+                                      [UIImage imageNamed:@"cball00007"],
+                                      [UIImage imageNamed:@"cball00008"],
+                                      [UIImage imageNamed:@"cball00009"],
+                                      [UIImage imageNamed:@"cball00010"],
+                                      [UIImage imageNamed:@"cball00011"],
+                                      [UIImage imageNamed:@"cball00012"],
+                                      [UIImage imageNamed:@"cball00013"],
+                                      [UIImage imageNamed:@"cball00014"],
+                                      [UIImage imageNamed:@"cball00015"],
+                                      [UIImage imageNamed:@"cball00016"],
+                                      [UIImage imageNamed:@"cball00017"],
+                                      [UIImage imageNamed:@"cball00018"],
+                                      [UIImage imageNamed:@"cball00019"],
+                                      [UIImage imageNamed:@"cball00020"],
+                                      [UIImage imageNamed:@"cball00021"],
+                                      [UIImage imageNamed:@"cball00022"],
+                                      [UIImage imageNamed:@"cball00023"],
+                                      [UIImage imageNamed:@"cball00024"], nil];
+
+    self.imageView.animationDuration = 1.0; // duration of the animation
+    self.imageView.animationRepeatCount = 1; // how many time animation run
     
      self.predictionArray = [[NSArray alloc] initWithObjects:@"It is certain", @"It is decidedly so", @"All signs say YES", @"The starts are not aligned", @"My reply is no", @"It is doubtful", @"Better not tell you now", @"Concentrate and ask again", @"Unable to answer now", nil];
 }
@@ -36,6 +65,8 @@
 -(void)makePrediction {
     NSUInteger index =arc4random_uniform(self.predictionArray.count);
     self.predictionLabel.text = [self.predictionArray objectAtIndex:index];
+    
+    [self.imageView startAnimating];
 }
 
 - (BOOL)canBecomeFirstResponder {
