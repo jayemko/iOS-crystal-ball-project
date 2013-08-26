@@ -66,7 +66,11 @@
     NSUInteger index =arc4random_uniform(self.predictionArray.count);
     self.predictionLabel.text = [self.predictionArray objectAtIndex:index];
     
-    [self.imageView startAnimating];
+    [self.imageView startAnimating]; // animate the crystal ball
+    
+    [UIView animateWithDuration:2.0 animations:^{
+        self.predictionLabel.alpha = 1.0;
+    }];
 }
 
 - (BOOL)canBecomeFirstResponder {
@@ -76,7 +80,8 @@
 // shake events
 
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
-    self.predictionLabel.text = @"";
+    self.predictionLabel.text = nil;
+    self.predictionLabel.alpha = 0.0;
 }
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     if( motion == UIEventSubtypeMotionShake){
@@ -89,7 +94,8 @@
 
 // touch events
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    self.predictionLabel.text = @"";
+    self.predictionLabel.text = nil;
+    self.predictionLabel.alpha = 0.0;
 }
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     [self makePrediction];
