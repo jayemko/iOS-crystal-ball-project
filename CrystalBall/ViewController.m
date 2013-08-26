@@ -33,9 +33,35 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)buttonPressed:(UIButton *)sender {
-    
+-(void)makePrediction {
     NSUInteger index =arc4random_uniform(self.predictionArray.count);
     self.predictionLabel.text = [self.predictionArray objectAtIndex:index];
 }
+
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+// shake events
+
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    self.predictionLabel.text = @"";
+}
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if( motion == UIEventSubtypeMotionShake){
+        [self makePrediction];
+    }
+}
+- (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    NSLog(@"motion cancelled");
+}
+
+// touch events
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    self.predictionLabel.text = @"";
+}
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self makePrediction];
+}
+
 @end
